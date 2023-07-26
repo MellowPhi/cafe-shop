@@ -66,7 +66,7 @@
     </div>
     <div id=about class="container-fluid bg-light p-0">
         <div class="container-fluid p-0">
-            <img alt="roasting-coffee" class="img-fluid w-100 h-50" src="https://source.unsplash.com/TD4DBagg2wE">
+            <img alt="roasting-coffee" class="img-fluid w-100" src="https://source.unsplash.com/TD4DBagg2wE">
         </div>
         <div class="container-fluid p-5">
             <h2 class="display-5 fw-bold">About Us</h2>
@@ -171,6 +171,51 @@
         </div>
 
     </div>
+    <div id="reviews" class="container-fluid bg-light p-0">
+        <h2 class="display-5 pt-5 px-5 fw-bold">Reviews From Our Customers</h2>
+        <div class="px-5 my-3">
+            <button  type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                     data-bs-target="#collapseReview"
+                     aria-expanded="false"
+                     aria-controls="collapseReview"
+            >Add Review</button>
+        </div>
+        <div id="collapseReview" class="collapse">
+            <div class="px-5">
+                <div class="card card-body">
+                    <form id="reviewForm" class="row g-3">
+                        <div class="col-md-4">
+                            <label for="reviewTitle" class="form-label">Title</label>
+                            <input class="form-control" id="reviewTitle" type="text" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="reviewText" class="form-label">Comment</label>
+                            <input class="form-control" id="reviewText" type="text" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="reviewName" class="form-label">Name</label>
+                            <input class="form-control" id="reviewName" type="text">
+                        </div>
+
+
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit" id="reviewButton">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<!-- History of reviews-->
+        <div class="px-5">
+            <div id="reviewsRow" class="row">
+
+            </div>
+        </div>
+    </div>
 </main>
 
 
@@ -178,5 +223,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
